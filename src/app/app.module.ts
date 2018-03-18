@@ -2,6 +2,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 /* ngbootstrap import */
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
@@ -29,6 +30,7 @@ import { AutofocusDirective } from './directives/autofocus.directive';
   ],
   imports: [ // aqui todos os modulos
     BrowserModule,
+    ServiceWorkerModule.register('/ngsw-worker.js', {enabled: environment.production}),
     FormsModule,
     NgbModule.forRoot(),
     AngularFireModule.initializeApp(environment.firebase, 'mycloud'), // imports firebase/app needed for everything
