@@ -1,0 +1,98 @@
+<!--****************************************************************************************************************
+  este componente consiste numa div em linha dividida em 2 partes de 2 tamanhos diferentes
+      primeira parte de 1 coluna na esquerda
+        indica o NUMERO da caixa
+      segunda parte de 11colunas na direita
+        nestas 11 colunas existe mais uma sub-div em linha que está dividida em 12 colunas e é DINAMICA
+        ou seja, pode apresentar 3 diferentes conteudos mediantes as seguintes condições:
+        -se a caixa está não está em modo de edição (!formVisible) && se não está vazia,
+        apresenta os dados do equipamento registado dentro da caixa
+        -senão se estiver em modo de edição (formVisible = true), apresenta o formulário
+        -ou então se está vazia (ficha = false), diz que está vazia, apenas
+
+  representacao visual:
+     _______________ ______________________________________________________________________________
+    |     numero    | .................................. ~dinamico~ .............................. |
+    |_______________ ______________________________________________________________________________|
+
+*****************************************************************************************************************-->
+
+
+<!-- <span (click)="criarCaixas(1)">+</span> -->
+<div *ngFor="let caixa of caixas">
+  <div class="row linha" (click)="toogleFormVisible(caixa.numero)">
+
+    <div class="col-sm-1">
+      <h5 class="text-dark">
+        <strong>{{caixa.numero}}</strong>
+      </h5>
+    </div>
+
+
+    <div class="col-sm-11">
+
+      <div *ngIf="!caixa.formVisible;else editarcaixa">
+        <div *ngIf="caixa.ficha;else vazio">
+          <div class="row">
+            <div class="col-sm-2">
+              <p class="text-danger"># {{caixa.ficha}}</p>
+            </div>
+            <div class="col-sm-8">
+              <p class="text-dark">{{caixa.marca}}
+                <span class="text-info">{{caixa.modelo}}</span>
+              </p>
+            </div>
+            <div class="col-sm-2">
+              <p class="text-secondary">{{caixa.tipo}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <ng-template #editarcaixa>
+        <form (ngSubmit)="onSubmit(caixa.numero,ficha,marca,modelo,tipo)">
+          <div class="form-row">
+            <div class="form-group col-sm-2">
+              <input type="number" class="form-control" placeholder="ficha" value={{caixa.ficha}} #ficha appAutofocus required>
+            </div>
+            <div class="form-group col-sm-3">
+              <input type="text" class="form-control" placeholder="marca" value={{caixa.marca}} #marca>
+            </div>
+            <div class="form-group col-sm-3">
+              <input type="text" class="form-control" placeholder="modelo" value={{caixa.modelo}} #modelo>
+            </div>
+            <div class="form-group col-sm-2">
+              <select class="form-control custom-select" #tipo>           
+                <option *ngIf="caixa.tipo" value={{caixa.tipo}} disabled selected>{{caixa.tipo}}</option>
+                <option *ngIf="!caixa.tipo" value="" disabled selected>tipo</option>
+                <option>portátil</option>
+                <option>tlm</option>
+                <option>consola</option>
+                <option>placa</option>
+                <option>outro</option>
+              </select>
+            </div>
+            <div class="form-group col-sm2">
+              <button type="submit" class="btn btn-outline-success">
+                <i class="fa fa-check"></i>
+              </button>
+              <button type="button" class="btn btn-outline-warning" (click)="clean(caixa.numero)" *ngIf="caixa.ficha">
+                  <i class="fa fa-trash" aria-hidden="true"></i>
+                </button>
+            </div>
+          </div>
+        </form>
+      </ng-template>
+
+      <ng-template #vazio>
+        <div class="row">
+          <div class="col-sm-12">
+            <p class="text-secondary">(Caixa Vazia)</p>
+          </div>
+        </div>
+      </ng-template>
+
+    </div>
+
+  </div>
+</div>

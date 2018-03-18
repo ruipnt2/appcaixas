@@ -1,1 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+$semi-transparent: rgba(255, 255, 255, 0.795);
+$transparent: rgba(255, 255, 255, 0);
+
+.linha {
+    margin: 0.2em;
+    background-color: $semi-transparent;
+}
+
+
+
+body {
+    background-image: url("./assets/pattern.jpg");
+    background-attachment: fixed;
+}
+
+$paragraph-margin-bottom:   0;
+
+$border-radius:               3rem;
+$border-radius-lg:            3rem;
+$border-radius-sm:            3rem;
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+
+$input-btn-padding-y:         0;
+$input-btn-padding-x:         .75rem;
+
+$input-btn-focus-box-shadow:  0;
+
+$input-btn-padding-y-sm:      0;
+$input-btn-padding-x-sm:      .5rem;
+
+$input-btn-padding-y-lg:      0;
+$input-btn-padding-x-lg:      1rem;
+
+/**/
+
+$input-bg:                              $transparent;
+$input-box-shadow:                      0;
+$form-group-margin-bottom:              0;
+
+$custom-select-padding-y:           0;
+$custom-select-padding-x:          .75rem;
+$custom-select-bg:                  $transparent;
+$custom-select-disabled-bg:         $custom-select-bg;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./myvariables.scss";
+@import 'favariables';
+@import '../node_modules/font-awesome/scss/font-awesome';
