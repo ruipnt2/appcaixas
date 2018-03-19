@@ -12,7 +12,7 @@
         "/inline.318b50c57b4eba3d437b.bundle.js",
         "/main.12436c6cb61d9f2606d1.bundle.js",
         "/polyfills.bf95165a1d5098766b92.bundle.js",
-        "/styles.e77ec250351288c905a0.bundle.css"
+        "/styles.8cebc36a4805a8a21084.bundle.css"
       ],
       "patterns": []
     },
@@ -32,8 +32,8 @@
     "/assets/pattern.jpg": "097ba4b2951cd013b8d9d8d52b53cc1b18aff4b3",
     "/main.12436c6cb61d9f2606d1.bundle.js": "6d00ec7cc5f9e0c8008fa95da6c3f19726c52e4d",
     "/polyfills.bf95165a1d5098766b92.bundle.js": "5f49131c0c147a20f91b1e77814434e0c77bd3dc",
-    "/styles.e77ec250351288c905a0.bundle.css": "4dc38ac09866430157b8b3abb19df8374bcf3ba6",
+    "/styles.8cebc36a4805a8a21084.bundle.css": "280edf041471cdd954baab814a068961e57b3d27",
     "/favicon.ico": "c61bebe0d29d730b4fa8564e60de66e8f10af182",
-    "/index.html": "4cc50121f536a9f28f4a4022cf99e6bcba4c0635"
+    "/index.html": "602806bb8aa226c1bacf53f23ed7efbb40d3fc81"
   }
 }
