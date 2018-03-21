@@ -9,7 +9,7 @@
     "theme_color": "transparent",
     "description": "",
     "orientation": "any",
-    "background_color": "pick",
+    "background_color": "#17a2b8",
     "related_applications": [],
     "prefer_related_applications": false,
     "icons": [
