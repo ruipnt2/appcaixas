@@ -23,9 +23,9 @@
   <div class="row linha" (click)="toogleFormVisible(caixa.numero)">
 
     <div class="col-sm-1">
-      <h5 class="text-dark">
+      <p>
         <strong>{{caixa.numero}}</strong>
-      </h5>
+      </p>
     </div>
 
 
@@ -35,15 +35,15 @@
         <div *ngIf="caixa.ficha;else vazio">
           <div class="row">
             <div class="col-sm-2">
-              <p class="text-danger"># {{caixa.ficha}}</p>
+              <p class="text-danger"><strong># {{caixa.ficha}}</strong></p>
             </div>
             <div class="col-sm-8">
-              <p class="text-dark">{{caixa.marca}}
+              <p class="text-dark"><strong>{{caixa.marca}}</strong>
                 <span class="text-info">{{caixa.modelo}}</span>
               </p>
             </div>
             <div class="col-sm-2">
-              <p class="text-secondary">{{caixa.tipo}}</p>
+              <p *ngIf="caixa.tipo" class="text-secondary">Tipo: {{caixa.tipo}}</p>
             </div>
           </div>
         </div>
@@ -63,8 +63,8 @@
             </div>
             <div class="form-group col-sm-2">
               <select class="form-control custom-select" #tipo>           
-                <option *ngIf="caixa.tipo" value={{caixa.tipo}} disabled selected>{{caixa.tipo}}</option>
-                <option *ngIf="!caixa.tipo" value="" disabled selected>tipo</option>
+                <option *ngIf="caixa.tipo" value={{caixa.tipo}} disabled selected class="disabled">{{caixa.tipo}}</option>
+                <option *ngIf="!caixa.tipo" value="" disabled selected class="disabled">tipo</option>
                 <option>portátil</option>
                 <option>tlm</option>
                 <option>consola</option>
