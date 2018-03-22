@@ -1,107 +1,52 @@
 {
-    "dir": "ltr",
-    "lang": "en",
-    "name": "CaixasApp",
-    "scope": "/",
-    "display": "standalone",
-    "start_url": "https://systec.dyndns.org/",
-    "short_name": "CaixasApp",
-    "theme_color": "#17a2b8",
-    "description": "",
-    "orientation": "any",
-    "background_color": "#17a2b8",
-    "related_applications": [],
-    "prefer_related_applications": false,
-    "icons": [
-        {
-            "src": "/images/b2fe0387-99ab-4cda-d8b9-c6694a320fb1.webPlatform.png",
-            "sizes": "48x48",
-            "type": "image/png"
-        },
-        {
-            "src": "/images/965c62dc-cae1-c46d-7bea-c792ca98c8fa.webPlatform.png",
-            "sizes": "1240x600",
-            "type": "image/png"
-        },
-        {
-            "src": "/images/fdb93e3c-561a-6294-83ae-a5dacff7abce.webPlatform.png",
-            "sizes": "300x300",
-            "type": "image/png"
-        },
-        {
-            "src": "/images/b9e79d33-6d5a-a102-f7fe-55af0d523c07.webPlatform.png",
-            "sizes": "150x150",
-            "type": "image/png"
-        },
-        {
-            "src": "/images/90f647b5-edc1-a725-9a1a-1518561c2a7b.webPlatform.png",
-            "sizes": "88x88",
-            "type": "image/png"
-        },
-        {
-            "src": "/images/57b296b4-e979-2639-7734-c33699502c65.webPlatform.png",
-            "sizes": "24x24",
-            "type": "image/png"
-        },
-        {
-            "src": "/images/e10fe7d0-8bd4-dc35-bda4-84d745c61271.webPlatform.png",
-            "sizes": "50x50",
-            "type": "image/png"
-        },
-        {
-            "src": "/images/7bc10dd5-01a9-f4a1-39e3-5b3a93981d94.webPlatform.png",
-            "sizes": "620x300",
-            "type": "image/png"
-        },
-        {
-            "src": "/images/e33f02e3-4728-25da-6562-7f0d3709164e.webPlatform.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "/images/bc9e2092-59ac-5903-cf17-7fa81248b02c.webPlatform.png",
-            "sizes": "144x144",
-            "type": "image/png"
-        },
-        {
-            "src": "/images/b8cdd339-d0e0-c6c7-44dc-abfc89bd15dd.webPlatform.png",
-            "sizes": "96x96",
-            "type": "image/png"
-        },
-        {
-            "src": "/images/ab16b21a-88d7-b1ef-b976-fa93180f170f.webPlatform.png",
-            "sizes": "72x72",
-            "type": "image/png"
-        },
-        {
-            "src": "/images/5ffadcf5-2272-cf2b-46f7-a1f74b7543a8.webPlatform.png",
-            "sizes": "36x36",
-            "type": "image/png"
-        },
-        {
-            "src": "/images/2c319385-29f3-0564-f4ed-651f548cbb34.webPlatform.png",
-            "sizes": "1024x1024",
-            "type": "image/png"
-        },
-        {
-            "src": "/images/1614293b-eb8e-2e91-3ba0-49fa00f68234.webPlatform.png",
-            "sizes": "180x180",
-            "type": "image/png"
-        },
-        {
-            "src": "/images/df5d5550-412e-5007-37fc-fa8c0026dfab.webPlatform.png",
-            "sizes": "152x152",
-            "type": "image/png"
-        },
-        {
-            "src": "/images/8390ebae-c5ea-6423-ed12-a35c40e4c026.webPlatform.png",
-            "sizes": "120x120",
-            "type": "image/png"
-        },
-        {
-            "src": "/images/9f08d6a6-a929-1c5a-c4f0-ea5a7290221f.webPlatform.png",
-            "sizes": "76x76",
-            "type": "image/png"
-        }
-    ]
+  "name": "CaixasApp",
+  "short_name": "CaixasApp",
+  "theme_color": "#17a2b8",
+  "background_color": "#17a2b8",
+  "display": "standalone",
+  "Scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "images/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "splash_pages": null
 }
