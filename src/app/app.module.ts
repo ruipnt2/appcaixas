@@ -17,10 +17,16 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { AngularFireStorageModule } from 'angularfire2/storage'; // nao necessario. apenas serve de cache offline??
 
+/* FontAwesome 5 imports */
+import fontawesome from '@fortawesome/fontawesome';
+import * as faCheck from '@fortawesome/fontawesome-free-solid/faCheck';
+import * as faTrash from '@fortawesome/fontawesome-free-solid/faTrash';
 
 /* services imports */
 import {CaixasService} from './services/caixas.service';
 import { AutofocusDirective } from './directives/autofocus.directive';
+
+fontawesome.library.add(faCheck, faTrash);
 
 @NgModule({
   declarations: [ // aqui colocam-se todos os componentes
